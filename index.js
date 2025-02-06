@@ -14,7 +14,7 @@ const engine=await CreateWebWorkerMLCEngine(
     SELECTED_MODEL,
     {
         initProgressCallback:info=>{
-            $small.textContent='Cargando Modelo: '+Math.round(info.progress*100)+'%';
+            $small.textContent='Cargando modelo: '+Math.round(info.progress*100)+'%';
             if (info.progress===1) {
                 $button.removeAttribute('disabled');
                 $small.style.display='none';
