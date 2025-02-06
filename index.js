@@ -7,7 +7,7 @@ const $messagesui=$('ul');
 const $container=$('main');
 const $button=$('button');
 const $small=$('div');
-const SELECTED_MODEL='TinyLlama-1.1B-Chat-v1.0-q4f32_1-MLC';//'Mistral-7B-Instruct-v0.3-q4f32_1-MLC';
+const SELECTED_MODEL='Llama-3.2-3B-Instruct-q4f32_1-MLC';
 
 const engine=await CreateWebWorkerMLCEngine(
     new Worker('./worker.js',{type:'module'}),
