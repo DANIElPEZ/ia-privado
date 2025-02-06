@@ -7,7 +7,7 @@ const $messagesui=$('ul');
 const $container=$('main');
 const $button=$('button');
 const $small=$('div');
-const SELECTED_MODEL="Hermes-3-Llama-3.2-3B-q4f32_1-MLC";
+const SELECTED_MODEL="Phi-3.5-vision-instruct-q4f32_1-MLC";
 
 const engine=await CreateWebWorkerMLCEngine(
     new Worker('./worker.js',{type:'module'}),
